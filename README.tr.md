@@ -1,9 +1,3 @@
-
----
-
-## 📄 Dosya 2: `README.tr.md` (Türkçe)
-
-```markdown
 [![en](https://img.shields.io/badge/lang-English-blue.svg)](https://github.com/dogukan-cengiz/Sound-Booster/blob/main/README.md)
 [![tr](https://img.shields.io/badge/lang-Türkçe-red.svg)](https://github.com/dogukan-cengiz/Sound-Booster/blob/main/README.tr.md)
 [![es](https://img.shields.io/badge/lang-Español-yellow.svg)](https://github.com/dogukan-cengiz/Sound-Booster/blob/main/README.es.md)
