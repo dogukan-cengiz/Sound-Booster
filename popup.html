@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="app">
+
+    <header class="header">
+      <div class="brand">
+        <img class="brand-logo" src="logo64x64.png" alt="" />
+        <h1 id="appName">Sound Booster</h1>
+      </div>
+      <div class="header-actions">
+        <select id="langSelect" class="lang-select"></select>
+        <button id="themeToggle" class="theme-btn">☾</button>
+      </div>
+    </header>
+
+    <div class="master-wrap">
+      <div class="master-pill" id="masterCard">
+        <span class="pulse-dot" id="pulseDot"></span>
+        <span class="master-label" data-i18n="master">Master</span>
+        <label class="switch">
+          <input type="checkbox" id="masterToggle" />
+          <span class="track"><span class="thumb"></span></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="volume-section">
+      <div class="volume-display">
+        <span id="volVal">100</span><span class="pct">%</span>
+      </div>
+      <input id="volSlider" type="range" min="0" max="1000" step="10" value="100" />
+    </div>
+
+    <div class="compact-sliders">
+      <div class="compact-row">
+        <span class="compact-label" data-i18n="bass">Bass</span>
+        <input id="bassSlider" class="compact-range" type="range" min="0" max="100" step="5" value="0" />
+        <span class="compact-value" id="bassVal">0%</span>
+      </div>
+      <div class="compact-row">
+        <span class="compact-label" data-i18n="treble">Treble</span>
+        <input id="trebleSlider" class="compact-range" type="range" min="0" max="100" step="5" value="0" />
+        <span class="compact-value" id="trebleVal">0%</span>
+      </div>
+      <div class="compact-row">
+        <span class="compact-label" data-i18n="balance">Balance</span>
+        <input id="balSlider" class="compact-range" type="range" min="0" max="100" step="5" value="50" />
+        <span class="compact-value" id="balVal">C</span>
+      </div>
+    </div>
+
+    <div class="presets">
+      <button class="chip" data-preset="flat"  data-i18n="flat">Flat</button>
+      <button class="chip" data-preset="music" data-i18n="music">Music</button>
+      <button class="chip" data-preset="movie" data-i18n="movie">Movie</button>
+      <button class="chip" data-preset="voice" data-i18n="voice">Voice</button>
+      <button class="chip" data-preset="game"  data-i18n="game">Game</button>
+    </div>
+
+    <div class="tab-info" id="tabInfo">
+      <img class="tab-favicon" id="tabFavicon" src="" alt="" />
+      <div class="tab-text">
+        <div class="tab-status">
+          <span class="eq-bars"><span></span><span></span><span></span></span>
+          <span data-i18n="nowPlaying">Now Playing</span>
+        </div>
+        <div class="tab-title" id="tabTitle"></div>
+      </div>
+    </div>
+
+    <button id="resetBtn" class="reset-btn" data-i18n="reset">Reset</button>
+
+    <footer class="footer">
+      <span class="made-by" data-i18n="madeBy">Made by</span>
+      <a class="author" id="authorLink" href="#">M. Doğukan Cengiz</a>
+    </footer>
+
+  </div>
+  <script src="i18n.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
