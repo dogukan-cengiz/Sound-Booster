@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Sound Booster",
+    "description": "Extension name."
+  },
+  "appDescription": {
+    "message": "Boost volume up to 1000%, music, movies, voice and games.",
+    "description": "Extension description."
+  }
+}
